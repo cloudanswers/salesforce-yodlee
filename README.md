@@ -1,5 +1,7 @@
 
-# Yodlee API wrapper for Salesforce.com's Apex Language
+[ ![Codeship Status for cloudanswers/salesforce-yodlee](https://codeship.com/projects/1f011f70-54dd-0133-1f91-7244abfc37b3/status?branch=master)](https://codeship.com/projects/108827)
+
+> Yodlee API wrapper for Salesforce.com's Apex Language
 
 
 ## Metadata API Installation
