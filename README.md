@@ -1,6 +1,5 @@
-#  
 
-> Yodlee API wrapper for Salesforce.com's Platform in Apex
+# Yodlee API wrapper for Salesforce.com's Apex Language
 
 
 ## Metadata API Installation
