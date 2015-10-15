@@ -28,16 +28,19 @@ Get your credentials at [developer.yodlee.com](https://developer.yodlee.com).
 ```js
 String username = 'xxx';
 String password = 'yyy';
-Yodlee.use(username, password);
+Yodlee y = new Yodlee(username, password);
 
 ```
 
-### OAuth Requests
+### Register a user (unless you're in developer mode, then you only get 5 that are automatically created for you)
 Yodlee uses the standard oauth authentication flow in order to allow apps to act on a user's behalf.
 The API provides a convenience method to help you authenticate your users.
 
 ```js
-Yodlee.User yodleeUser = Yodlee.userLogin(sbMemsomeuser, sbMemsomeuser);
+y.register(
+	// TBD, not able to register when trialing the yodlee api, only when live
+);
+
 ```
 
 ### Using the API, GET User Accounts
@@ -46,7 +49,7 @@ Returns the information related to the specified accounts aggregated by the User
 [Yodlee Docs](https://developer.yodlee.com/Aggregation_API/Aggregation_Services_Guide/Aggregation_REST_API_Reference/getSiteAccounts)
 
 ```js
-Yodlee.Account[] yAccounts = yodleeUser.getAccounts();
+Yodlee.Account[] yAccounts = y.getAccounts();
 ```
 
 ### GET User Transactions
